@@ -1,0 +1,289 @@
+using System.Net.Sockets;
+using System.Threading.Channels;
+
+namespace EjerciciosEstructuraControl
+{
+    internal class Program
+    {
+        static void Ejercicio1()
+        {
+            /*  Programa que lea un número entero por teclado y calcule si es par o impar. Un número 
+            es par si el resto (%) de dividir entre 2 da 0. */
+
+            Console.WriteLine("Escribe un número entero: ");
+            int numero = Convert.ToInt32(Console.ReadLine());
+            string tipoNumero = numero switch
+            {
+                _ when (numero % 2 == 0) => "par",
+                _ => "impar"
+
+            };
+            Console.WriteLine(tipoNumero);
+        }
+        static void Ejercicio1b()
+        {
+            Console.WriteLine("Escribe un número entero: ");
+            int numero = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine($"{numero} es {(numero % 2 == 0 ? "par" : "impar")}");
+        }
+
+
+        static void Ejercicio2()
+        { /*  Programa que lea un número entero y muestre si el número es múltiplo de 10 (si el 
+              resto de la división entre 10 da 0). */
+            Console.WriteLine("Escribe un número entero: ");
+            int numero = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine($"{numero}{(numero % 10 == 0 ? " es múltiplo de 10" : " no es múltiplo de 10")}");
+        }
+
+
+        static void Ejercicio3()
+        { /* Programa que lea un carácter por teclado y compruebe si es una letra mayúscula. Una 
+             letra mayúscula es aquella que está entre la ‘A’ y la ‘Z’. Recuerda que se pueden 
+             comparar los caracteres como si fueran números.  */
+
+            Console.WriteLine("Escriba una letra: ");
+            char letra = Convert.ToChar(Console.ReadKey(true).KeyChar);
+            string tipo = letra switch
+            {
+                >= 'A' and <= 'Z' => "es mayúscula",
+                >= 'a' and <= 'z' => "es minúscula",
+                _ => "no es una letra"
+            };
+            //en casos en el que solo utilizas la variable que has declarado en el switch, se usa el and en vez de &&
+
+            Console.WriteLine($"{letra} {tipo}");
+        }
+
+
+
+        static void Ejercicio4()
+        { /*  Programa que le pida 2 cadenas de texto al usuario y compruebe si son iguales.  */
+
+            Console.WriteLine("Escriba una cadena de texto: ");
+            string cadena1 = Console.ReadLine()!;
+            Console.WriteLine("Escriba otra cadena de texto: ");
+            string cadena2 = Console.ReadLine()!;
+            Console.WriteLine($"La primera cadena de texto {(cadena1 == cadena2 ? "es igual a la segunda" : "no es igual a la segunda")}");
+        }
+
+
+
+        static void Ejercicio5()
+        { /* Programa que lea dos números por teclado y muestre el resultado de la división del 
+             primer número por el segundo. Se debe comprobar que el divisor no puede ser cero.  */
+
+            Console.WriteLine("Escriba el dividendo:");
+            double dividendo = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Escriba el divisor:");
+            double divisor = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine((divisor != 0 ? $"La división de ambos números es:  {dividendo / divisor} " : "No se puede dividir entre 0"));
+
+        }
+
+
+
+
+        static void Ejercicio6()
+        { /*  Programa que pida al usuario tres números enteros y muestre el mayor de los tres. */
+
+            Console.WriteLine("Escriba el primer número entero: ");
+            if (!int.TryParse(Console.ReadLine(), out int num1))
+            {
+                Console.WriteLine("Entrada inválida. El valor no es un número entero.");
+                return;
+            }
+
+            Console.WriteLine("Escriba el segundo número entero: ");
+            if (!int.TryParse(Console.ReadLine(), out int num2))
+            {
+                Console.WriteLine("Entrada inválida. El valor no es un número entero.");
+                return;
+            }
+
+            Console.WriteLine("Escriba el tercer número entero: ");
+            if (!int.TryParse(Console.ReadLine(), out int num3))
+            {
+                Console.WriteLine("Entrada inválida. El valor no es un número entero.");
+                return;
+            }
+
+            int mayor = (num1 >= num2 && num1 >= num3) ? num1 : (num2 >= num1 && num2 >= num3) ? num2 : num3;
+            Console.WriteLine($"El mayor de los tres números es: {mayor}");
+        }
+
+
+
+        static void Ejercicio7()
+        { /*  Programa que pida al usuario una cantidad de horas, de minutos y de segundos (3 
+              números diferentes). Comprueba que la hora está en el rango de 0 a 23, los minutos 
+              y los segundos de 0 a 59. 
+              Si todo es correcto, muestra al usuario la hora en formato HH:MM:SS (2 cifras para cada 
+              parte rellenando con 0 a la izquierda si es una cifra), y si no, muestra un mensaje de error. 
+              Pista: Repasa la parte de formatear la salida de texto para números enteros.*/
+
+            Console.WriteLine("Indique las horas (entre 0 y 23)");
+            int horas = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Indique los minutos (entre 0 y 59)");
+            int minutos = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Indique los segundos (entre 0 y 59)");
+            int segundos = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine((0 <= horas && horas <= 23 && 0 <= minutos && minutos <= 59 && 0 <= segundos && segundos <= 59 ? $"La hora es: {horas:D2}:{minutos:D2}:{segundos:D2}" : "Los valores dados no son válidos."));
+        }
+
+
+
+        static void Ejercicio8()
+        { /* Escribe un programa que declare una variable A de tipo entero y asígnale un valor. A 
+             continuación muestra un mensaje indicando si A es par o impar. Utiliza el operador 
+             ternario ( ? : ) dentro de WriteLine para resolverlo. 
+             Si por ejemplo A = 14 la salida será: 
+             14 es par 
+             Si fuese por ejemplo A = 15 la salida será: 
+             15 es impar  */
+
+            Console.WriteLine("Escribe un número entero: ");
+            int numero = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine($"{numero} es {(numero % 2 == 0 ? "par" : "impar")}");
+
+        }
+
+
+
+        static void Ejercicio9()
+        { /*  Programa que lea una variable entera llamada mes y compruebe  con una estructura 
+              switch, si el valor corresponde a un mes de 30 días, de 31 o de 28. Supondremos que 
+              febrero tiene 28 días. Se mostrará además de los días, el nombre del mes. Se mostrará 
+              un error cuando el mes no sea válido.  */
+
+            Console.WriteLine("Indique el número del mes: ");
+            int numMes = Convert.ToInt32(Console.ReadLine());
+
+            string mes = numMes switch
+            {
+                1 => "Enero, 31 días",
+                2 => "Febrero, 28 días",
+                3 => "Marzo, 31 días",
+                4 => "Abril, 30 días",
+                5 => "Mayo, 31 días",
+                6 => "Junio, 30 días",
+                7 => "Julio, 31 días",
+                8 => "Agosto, 31 días",
+                9 => "Septiembre, 30 días",
+                10 => "Octubre, 31 días",
+                11 => "Noviembre, 30 días",
+                12 => "Diciembre, 31 días",
+                _ => "Mes no válido"
+            };
+            Console.WriteLine(mes);
+        }
+
+
+
+
+        static void Ejercicio10()
+        { /*  Crea un programa que lea una letra tecleada por el usuario y diga si se trata de un 
+              signo de puntuación (. , ; :), una cifra numérica (del 0 al 9) u otro carácter, usando 
+              "switch" (pista: necesitarás usar un dato de tipo "char").   */
+
+            Console.WriteLine("Pulse una tecla: ");
+            char tecla = Convert.ToChar(Console.ReadKey(true).KeyChar);
+
+            string tipoTecla = tecla switch
+            {
+                '.' or ',' or ';' or ':' => $"{tecla} es un signo de puntuación",
+                >= '0' and <= '9' => $"{tecla} es una cifra numérica",
+                _ => $"{tecla} Es otro carácter."
+            };
+            Console.WriteLine(tipoTecla);
+        }
+
+
+
+
+        static void Ejercicio11()
+        { /*  Pide al usuario 2 números. Después muestra al usuario un menú con las siguientes 
+              opciones: 1. Sumar, 2. Restar, 3. Multiplicar, 4. Dividir. Comprueba la opción elegida, 
+              haz la operación y muestra el resultado de la misma. 
+              Si la operación elegida es la división, comprueba que el segundo número (divisor) no 
+              sea cero antes de hacer la operación.   */
+
+            Console.WriteLine("Indique el primer número: ");
+            double num1 = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Indique el segundo número: ");
+            double num2 = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("Indique la operación: \n1. Sumar.\n2. Restar.\n3. Multilicar.\n4. Dividir.");
+            int opcion = Convert.ToInt32(Console.ReadLine());
+
+            string operacion = opcion switch
+            {
+                1 => $"La suma es {num1} + {num2} = {num1 + num2}",
+                2 => $"La resta es {num1} - {num2} = {num1 - num2}",
+                3 => $"La multiplicación es {num1} * {num2} = {num1 * num2}",
+                4 => (num2 != 0 ? $"La división es {num1} / {num2} = {num1 / num2}" : "El valor del divisor no puede ser 0"),
+                _ => "Opción no válida",
+            };
+            Console.WriteLine(operacion);
+
+        }
+
+
+
+
+        static void Ejercicio12()
+        { /* . Crea una variable con el precio de una entrada que inicialmente valga 50. Pregunta al 
+               usuario su edad. 
+               a. Si es menor de edad se le hará un descuento del 25% en la entrada. 
+               b. Si es mayor de edad pero no está jubilado (65 años), pregúntale si es socio. Si el 
+                  usuario responde “sí” hazle un descuento del 40%. 
+               c. Si está jubilado se le hará un descuento del 75%. 
+               d. Finalmente muéstrale el precio que tiene que pagar por la entrada.wcc  */
+
+            double precio = 50.0;
+            Console.WriteLine("¿Cuál es tu edad?");
+            int edad = Convert.ToInt32(Console.ReadLine());
+            if (edad < 18)
+            {
+                Console.WriteLine($"El precio de la entrada es {precio * 0.75}");
+            }
+            else if (edad < 65 && edad >= 18)
+            {
+                Console.WriteLine("¿Eres socio (Sí o No)?");
+                string socio = Console.ReadLine()!;
+                if (socio == "Sí")
+                {
+                    Console.WriteLine($"El precio de la entrada es {precio * 0.6}");
+                }
+                else
+                {
+                    Console.WriteLine($"El precio de la entrada es {precio}");
+                }
+            }
+            else
+            {
+                Console.WriteLine($"El precio de la entrada es {precio * 0.25}");
+            }
+        }
+
+    
+
+        static void Main(string[] args)
+        {
+            //Ejercicio1();
+            //Ejercicio1b();
+            //Ejercicio2();
+            //Ejercicio3();
+            //Ejercicio4();
+            //Ejercicio5();
+            //Ejercicio6();
+            //Ejercicio7();
+            //Ejercicio8();
+            //Ejercicio9();
+            //Ejercicio10();
+            //Ejercicio11();
+            Ejercicio12();
+        }
+    }
+}
