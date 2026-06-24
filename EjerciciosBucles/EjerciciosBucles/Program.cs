@@ -188,18 +188,19 @@ namespace EjerciciosBucles
             //**
             //***
             //****
-            
-            Console.WriteLine("Da un número entero: ");
-            int num = Convert.ToInt32(Console.ReadLine());
 
-            for (int i = 1; i <= num; i++)
-            {
-                 for (int j = 1; j <= i; j++)
-                 {
-                     Console.Write("*");
-                 }
-             Console.WriteLine();
-            }
+           Console.WriteLine("Da un número entero: ");
+           int num = Convert.ToInt32(Console.ReadLine());
+
+           for (int i = 1; i <= num; i++)
+           {
+               for (int j = 1; j <= i; j++)
+               {
+                   Console.Write("*");
+               }
+               Console.WriteLine();
+           }
+
             
         }
 
@@ -212,6 +213,35 @@ namespace EjerciciosBucles
             //   **
             //   ***
             //  ****
+
+             Console.WriteLine("Da un número entero: ");
+             int num = Convert.ToInt32(Console.ReadLine());
+
+             for (int i = 1; i <= num; i++)
+             {
+                 for (int j = 1; j <= num - i; j++) Console.Write(" ");
+                 for(int k = 1; k <= i; k++) Console.Write("*");
+                 Console.WriteLine();
+             }
+        }
+
+        static void Ejercicio14b()
+        {
+            // Haz lo mismo pero con una escalera de subida(para generar los huecos debes escribir
+            // el carácter de espacio).
+            //Dime un número: 4
+            //   *
+            //   **
+            //   ***
+            //  ****
+            Console.WriteLine("Da un número entero: ");
+            int num = Convert.ToInt32(Console.ReadLine());
+
+            for (int i = 1; i <= num; i++)
+            {
+                for (int j = 1; j <= num; j++) Console.Write((j <= num - i ? " " : "*"));
+                Console.WriteLine();
+            }
         }
 
         static void Ejercicio15()
@@ -223,6 +253,32 @@ namespace EjerciciosBucles
             //*   *
             //*   *
             //*****
+            
+           Console.WriteLine("Dime el ancho: ");
+           int ancho = Convert.ToInt32(Console.ReadLine());
+           Console.WriteLine("Dime el alto: ");
+           int alto = Convert.ToInt32(Console.ReadLine()); 
+
+           for(int fila = 1; fila <= alto; fila++)
+           {
+               if( fila == 1 || fila == alto)
+               {
+                   for (int columna = 1; columna <= ancho; columna++)
+                   {
+                       Console.Write("*");
+                   }
+               }
+               else
+               {
+                   Console.Write("*");
+                   for(int columna = 2; columna < ancho; columna++)
+                   {
+                       Console.Write(" ");
+                   }
+                   Console.Write("*");
+               }
+               Console.WriteLine();
+           }
         }
 
         static void Ejercicio16()
@@ -271,6 +327,7 @@ namespace EjerciciosBucles
             Ejercicio12();
             //Ejercicio13();
             //Ejercicio14();
+            //Ejercicio14b();
             //Ejercicio15();
             //Ejercicio16();
             //Ejercicio17();
