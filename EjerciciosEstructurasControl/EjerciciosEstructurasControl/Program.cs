@@ -37,7 +37,7 @@
         static void Ejercicio3()
         { /* Programa que lea un carácter por teclado y compruebe si es una letra mayúscula. Una 
              letra mayúscula es aquella que está entre la ‘A’ y la ‘Z’. Recuerda que se pueden 
-             comparar los caracteres como si fueran números.  */
+             comparar los ces como si fueran números.  */
 
             Console.WriteLine("Escriba una letra: ");
             char letra = Convert.ToChar(Console.ReadKey(true).KeyChar);
@@ -283,27 +283,31 @@
             // y a las letras les sume 3 , si es mayúscula que se convierta en minúscula y viceversa pero siempre que sea letra. De manera circular, es decir, si es una letra y le sumas 3 y se pasa de z o Z, que vuelva a empezar desde a o A.
             // Los signos de puntuación los cambia con el siguiente de la siguiente forma ( -> ) , ) -> - , - -> _ , _ -> = , = -> + , + -> * , * -> / , / -> ? , ? -> ! , ! -> @ , @ -> # , # -> $ , $ -> % , % -> & , & -> ' , ' -> " , " -> ; , ; -> : , : -> < , < -> > , > -> . , . -> , , , -> (
             
-            char[] signos = { '(', ')', '-', '_', '=', '+', '*', '/', '?', '!', '@', '#', '$', '%', '&', '\'', '\"', ';', ':', '<', '>', '.', ',', '(' };
-            Console.WriteLine("Escribe caracteres, cada carácter se escribirá en una línea diferente. Escribe un punto (¿) para terminar.");
-            char letra;
-            do
+            char[] signos = { '(', ')', '-', '_', '=', '+', '*', '/', '?', '!', '@', '#', '$', '%', '&', '\'', '\"', ';', ':', '<', '>', '.', ',' };
+            Console.WriteLine("Escribe la contraseña, esta se cambiará carácter a carácter: ");
+            string contrasena = Console.ReadLine()!;
+            char c;
+
+           for(int i = 0; i<contrasena.Length; i++)
             {
-                letra = Console.ReadKey(true).KeyChar;
-                if (letra != '¿')
-                {
-                    char newChar = letra switch
+                c = contrasena[i];
+                if(c <= '6' && c >= '0' || c > '6' && c <= '9' || c <= 'W' && c >= 'A' || c > 'W' && c <= 'Z' || c <= 'w' && c >= 'a' || c > 'w' && c <= 'z') { 
+                    char newChar = c switch
                     {
-                        <= '6' and >= '0' =>  Convert.ToChar(letra + 3),
-                        > '6' and <= '9' => Convert.ToChar(letra - 7),
-                        <= 'W' and >= 'A' => Convert.ToChar(letra + 35),
-                        > 'W' and <= 'Z' => Convert.ToChar(letra + 9),
-                        <= 'w' and >= 'a' => Convert.ToChar(letra - 29),
-                        > 'w' and <= 'z' => Convert.ToChar(letra + -55),
-                         
+                        <= '6' and >= '0' => Convert.ToChar(c + 3),
+                        > '6' and <= '9' => Convert.ToChar(c - 7),
+                        <= 'W' and >= 'A' => Convert.ToChar(c + 35),
+                        > 'W' and <= 'Z' => Convert.ToChar(c + 9),
+                        <= 'w' and >= 'a' => Convert.ToChar(c - 29),
+                        > 'w' and <= 'z' => Convert.ToChar(c - 55),
                     };
                     Console.Write(newChar);
                 }
-            } while (letra != '¿');
+                else
+                {
+                    for (int j = 0; j < signos.Length; j++) Console.Write(c == signos[j] && j < signos.Length - 1 ? signos[j+1] : c == signos[j] && j == signos.Length - 1 ? signos[0] : "");
+                }
+            } 
         }
 
 
@@ -352,8 +356,8 @@
             //Ejercicio10();
             //Ejercicio11();
             //Ejercicio12();
-            //EjercicioExtra();
-            EjercicioExtrab();
+            EjercicioExtra();
+            //EjercicioExtrab();
         }
     }
 }
