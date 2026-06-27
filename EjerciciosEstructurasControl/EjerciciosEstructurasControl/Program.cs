@@ -213,23 +213,28 @@
               Si la operación elegida es la división, comprueba que el segundo número (divisor) no 
               sea cero antes de hacer la operación.   */
 
-            Console.WriteLine("Indique el primer número: ");
-            double num1 = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine("Indique el segundo número: ");
-            double num2 = Convert.ToDouble(Console.ReadLine());
-
-            Console.WriteLine("Indique la operación: \n1. Sumar.\n2. Restar.\n3. Multilicar.\n4. Dividir.");
-            int opcion = Convert.ToInt32(Console.ReadLine());
-
-            string operacion = opcion switch
+            int opcion = 0;
+            do
             {
-                1 => $"La suma es {num1} + {num2} = {num1 + num2}",
-                2 => $"La resta es {num1} - {num2} = {num1 - num2}",
-                3 => $"La multiplicación es {num1} * {num2} = {num1 * num2}",
-                4 => (num2 != 0 ? $"La división es {num1} / {num2} = {num1 / num2}" : "El valor del divisor no puede ser 0"),
-                _ => "Opción no válida",
-            };
-            Console.WriteLine(operacion);
+                Console.WriteLine("Indique el primer número: ");
+                double num1 = Convert.ToDouble(Console.ReadLine());
+                Console.WriteLine("Indique el segundo número: ");
+                double num2 = Convert.ToDouble(Console.ReadLine());
+
+                Console.WriteLine("Indique la operación: \n1. Sumar.\n2. Restar.\n3. Multilicar.\n4. Dividir.\n5. Salir.");
+                opcion = Convert.ToInt32(Console.ReadLine());
+
+                string operacion = opcion switch
+                {
+                    1 => $"La suma es {num1} + {num2} = {num1 + num2}",
+                    2 => $"La resta es {num1} - {num2} = {num1 - num2}",
+                    3 => $"La multiplicación es {num1} * {num2} = {num1 * num2}",
+                    4 => (num2 != 0 ? $"La división es {num1} / {num2} = {num1 / num2}" : "El valor del divisor no puede ser 0"),
+                    5 => "Saliendo.",
+                    _ => "Número no valido."
+                };
+                Console.WriteLine(operacion); 
+            } while (opcion != 5);
 
         }
 
@@ -271,6 +276,65 @@
             }
         }
 
+        static void EjercicioExtra()
+        {
+            // Dada la siguiente contraseña propuesta por el usuario 1a; te saque 4D.
+            // a los números les sume 3 (pero siempre da un número entre 0 y 9)
+            // y a las letras les sume 3 , si es mayúscula que se convierta en minúscula y viceversa pero siempre que sea letra. De manera circular, es decir, si es una letra y le sumas 3 y se pasa de z o Z, que vuelva a empezar desde a o A.
+            // Los signos de puntuación los cambia con el siguiente de la siguiente forma ( -> ) , ) -> - , - -> _ , _ -> = , = -> + , + -> * , * -> / , / -> ? , ? -> ! , ! -> @ , @ -> # , # -> $ , $ -> % , % -> & , & -> ' , ' -> " , " -> ; , ; -> : , : -> < , < -> > , > -> . , . -> , , , -> (
+            
+            char[] signos = { '(', ')', '-', '_', '=', '+', '*', '/', '?', '!', '@', '#', '$', '%', '&', '\'', '\"', ';', ':', '<', '>', '.', ',', '(' };
+            Console.WriteLine("Escribe caracteres, cada carácter se escribirá en una línea diferente. Escribe un punto (¿) para terminar.");
+            char letra;
+            do
+            {
+                letra = Console.ReadKey(true).KeyChar;
+                if (letra != '¿')
+                {
+                    char newChar = letra switch
+                    {
+                        <= '6' and >= '0' =>  Convert.ToChar(letra + 3),
+                        > '6' and <= '9' => Convert.ToChar(letra - 7),
+                        <= 'W' and >= 'A' => Convert.ToChar(letra + 35),
+                        > 'W' and <= 'Z' => Convert.ToChar(letra + 9),
+                        <= 'w' and >= 'a' => Convert.ToChar(letra - 29),
+                        > 'w' and <= 'z' => Convert.ToChar(letra + -55),
+                         
+                    };
+                    Console.Write(newChar);
+                }
+            } while (letra != '¿');
+        }
+
+
+        //static void EjercicioExtrab()
+        //{
+        //    // Dada la siguiente contraseña propuesta por el usuario 1a; te saque 4D.
+        //    // a los números les sume 3 (pero siempre da un número entre 0 y 9)
+        //    // y a las letras les sume 3 , si es mayúscula que se convierta en minúscula y viceversa pero siempre que sea letra. De manera circular, es decir, si es una letra y le sumas 3 y se pasa de z o Z, que vuelva a empezar desde a o A.
+        //    // Los signos de puntuación los cambia con el siguiente de la siguiente forma ( -> ) , ) -> - , - -> _ , _ -> = , = -> + , + -> * , * -> / , / -> ? , ? -> ! , ! -> @ , @ -> # , # -> $ , $ -> % , % -> & , & -> ' , ' -> " , " -> ; , ; -> : , : -> < , < -> > , > -> . , . -> , , , -> (
+
+        //    char[] signos = { '(', ')', '-', '_', '=', '+', '*', '/', '?', '!', '@', '#', '$', '%', '&', '\'', '\"', ';', ':', '<', '>', '.', ',', '(' };
+        //    Console.WriteLine("Escribe caracteres, cada carácter se escribirá en una línea diferente. Escribe un punto (¿) para terminar.");
+        //    char[] letra = new char[10] 
+        //    letra = Console.ReadKey(true).KeyChar;
+            
+
+        //    foreach (char c in letra) {
+        //            char newChar = letra switch
+        //            {
+        //                <= '6' and >= '0' => Convert.ToChar(letra[] + 3),
+        //                > '6' and <= '9' => Convert.ToChar(letra[] - 7),
+        //                <= 'W' and >= 'A' => Convert.ToChar(letra[] + 35),
+        //                > 'W' and <= 'Z' => Convert.ToChar(letra[] + 9),
+        //                <= 'w' and >= 'a' => Convert.ToChar(letra[] - 29),
+        //                > 'w' and <= 'z' => Convert.ToChar(letra[] + -55),
+
+        //            };
+        //            Console.Write(newChar);
+        //        }
+        //    }
+        //}
 
 
         static void Main(string[] args)
@@ -288,6 +352,8 @@
             //Ejercicio10();
             //Ejercicio11();
             //Ejercicio12();
+            //EjercicioExtra();
+            EjercicioExtrab();
         }
     }
 }
