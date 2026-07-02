@@ -1,0 +1,14 @@
+C:\Users\paesa\source\repos\EjerciciosArrays\EjerciciosArrays\bin\Debug\net10.0\EjerciciosArrays.exe
+C:\Users\paesa\source\repos\EjerciciosArrays\EjerciciosArrays\bin\Debug\net10.0\EjerciciosArrays.deps.json
+C:\Users\paesa\source\repos\EjerciciosArrays\EjerciciosArrays\bin\Debug\net10.0\EjerciciosArrays.runtimeconfig.json
+C:\Users\paesa\source\repos\EjerciciosArrays\EjerciciosArrays\bin\Debug\net10.0\EjerciciosArrays.dll
+C:\Users\paesa\source\repos\EjerciciosArrays\EjerciciosArrays\bin\Debug\net10.0\EjerciciosArrays.pdb
+C:\Users\paesa\source\repos\EjerciciosArrays\EjerciciosArrays\obj\Debug\net10.0\EjerciciosArrays.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\paesa\source\repos\EjerciciosArrays\EjerciciosArrays\obj\Debug\net10.0\EjerciciosArrays.AssemblyInfoInputs.cache
+C:\Users\paesa\source\repos\EjerciciosArrays\EjerciciosArrays\obj\Debug\net10.0\EjerciciosArrays.AssemblyInfo.cs
+C:\Users\paesa\source\repos\EjerciciosArrays\EjerciciosArrays\obj\Debug\net10.0\EjerciciosArrays.csproj.CoreCompileInputs.cache
+C:\Users\paesa\source\repos\EjerciciosArrays\EjerciciosArrays\obj\Debug\net10.0\EjerciciosArrays.dll
+C:\Users\paesa\source\repos\EjerciciosArrays\EjerciciosArrays\obj\Debug\net10.0\refint\EjerciciosArrays.dll
+C:\Users\paesa\source\repos\EjerciciosArrays\EjerciciosArrays\obj\Debug\net10.0\EjerciciosArrays.pdb
+C:\Users\paesa\source\repos\EjerciciosArrays\EjerciciosArrays\obj\Debug\net10.0\EjerciciosArrays.genruntimeconfig.cache
+C:\Users\paesa\source\repos\EjerciciosArrays\EjerciciosArrays\obj\Debug\net10.0\ref\EjerciciosArrays.dll
