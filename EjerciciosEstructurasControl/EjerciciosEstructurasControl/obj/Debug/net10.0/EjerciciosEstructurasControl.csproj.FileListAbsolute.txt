@@ -12,17 +12,3 @@ C:\Users\paesa\source\repos\EjerciciosEstructurasControl\EjerciciosEstructurasCo
 C:\Users\paesa\source\repos\EjerciciosEstructurasControl\EjerciciosEstructurasControl\obj\Debug\net10.0\EjerciciosEstructurasControl.pdb
 C:\Users\paesa\source\repos\EjerciciosEstructurasControl\EjerciciosEstructurasControl\obj\Debug\net10.0\EjerciciosEstructurasControl.genruntimeconfig.cache
 C:\Users\paesa\source\repos\EjerciciosEstructurasControl\EjerciciosEstructurasControl\obj\Debug\net10.0\ref\EjerciciosEstructurasControl.dll
-C:\Users\Usuario\source\repos\EjerciciosEstructurasControl\EjerciciosEstructurasControl\obj\Debug\net10.0\EjerciciosEstructurasControl.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Usuario\source\repos\EjerciciosEstructurasControl\EjerciciosEstructurasControl\obj\Debug\net10.0\EjerciciosEstructurasControl.AssemblyInfoInputs.cache
-C:\Users\Usuario\source\repos\EjerciciosEstructurasControl\EjerciciosEstructurasControl\obj\Debug\net10.0\EjerciciosEstructurasControl.AssemblyInfo.cs
-C:\Users\Usuario\source\repos\EjerciciosEstructurasControl\EjerciciosEstructurasControl\obj\Debug\net10.0\EjerciciosEstructurasControl.csproj.CoreCompileInputs.cache
-C:\Users\Usuario\source\repos\EjerciciosEstructurasControl\EjerciciosEstructurasControl\obj\Debug\net10.0\EjerciciosEstructurasControl.dll
-C:\Users\Usuario\source\repos\EjerciciosEstructurasControl\EjerciciosEstructurasControl\obj\Debug\net10.0\refint\EjerciciosEstructurasControl.dll
-C:\Users\Usuario\source\repos\EjerciciosEstructurasControl\EjerciciosEstructurasControl\obj\Debug\net10.0\EjerciciosEstructurasControl.pdb
-C:\Users\Usuario\source\repos\EjerciciosEstructurasControl\EjerciciosEstructurasControl\bin\Debug\net10.0\EjerciciosEstructurasControl.exe
-C:\Users\Usuario\source\repos\EjerciciosEstructurasControl\EjerciciosEstructurasControl\bin\Debug\net10.0\EjerciciosEstructurasControl.deps.json
-C:\Users\Usuario\source\repos\EjerciciosEstructurasControl\EjerciciosEstructurasControl\bin\Debug\net10.0\EjerciciosEstructurasControl.runtimeconfig.json
-C:\Users\Usuario\source\repos\EjerciciosEstructurasControl\EjerciciosEstructurasControl\bin\Debug\net10.0\EjerciciosEstructurasControl.dll
-C:\Users\Usuario\source\repos\EjerciciosEstructurasControl\EjerciciosEstructurasControl\bin\Debug\net10.0\EjerciciosEstructurasControl.pdb
-C:\Users\Usuario\source\repos\EjerciciosEstructurasControl\EjerciciosEstructurasControl\obj\Debug\net10.0\EjerciciosEstructurasControl.genruntimeconfig.cache
-C:\Users\Usuario\source\repos\EjerciciosEstructurasControl\EjerciciosEstructurasControl\obj\Debug\net10.0\ref\EjerciciosEstructurasControl.dll

@@ -37,7 +37,7 @@
         static void Ejercicio3()
         { /* Programa que lea un carácter por teclado y compruebe si es una letra mayúscula. Una 
              letra mayúscula es aquella que está entre la ‘A’ y la ‘Z’. Recuerda que se pueden 
-             comparar los ces como si fueran números.  */
+             comparar los caracteres como si fueran números.  */
 
             Console.WriteLine("Escriba una letra: ");
             char letra = Convert.ToChar(Console.ReadKey(true).KeyChar);
@@ -282,16 +282,17 @@
             // a los números les sume 3 (pero siempre da un número entre 0 y 9)
             // y a las letras les sume 3 , si es mayúscula que se convierta en minúscula y viceversa pero siempre que sea letra. De manera circular, es decir, si es una letra y le sumas 3 y se pasa de z o Z, que vuelva a empezar desde a o A.
             // Los signos de puntuación los cambia con el siguiente de la siguiente forma ( -> ) , ) -> - , - -> _ , _ -> = , = -> + , + -> * , * -> / , / -> ? , ? -> ! , ! -> @ , @ -> # , # -> $ , $ -> % , % -> & , & -> ' , ' -> " , " -> ; , ; -> : , : -> < , < -> > , > -> . , . -> , , , -> (
-            
+
             char[] signos = { '(', ')', '-', '_', '=', '+', '*', '/', '?', '!', '@', '#', '$', '%', '&', '\'', '\"', ';', ':', '<', '>', '.', ',' };
             Console.WriteLine("Escribe la contraseña, esta se cambiará carácter a carácter: ");
             string contrasena = Console.ReadLine()!;
             char c;
 
-           for(int i = 0; i<contrasena.Length; i++)
+            for (int i = 0; i < contrasena.Length; i++)
             {
                 c = contrasena[i];
-                if(c <= '6' && c >= '0' || c > '6' && c <= '9' || c <= 'W' && c >= 'A' || c > 'W' && c <= 'Z' || c <= 'w' && c >= 'a' || c > 'w' && c <= 'z') { 
+                if (c <= '6' && c >= '0' || c > '6' && c <= '9' || c <= 'W' && c >= 'A' || c > 'W' && c <= 'Z' || c <= 'w' && c >= 'a' || c > 'w' && c <= 'z')
+                {
                     char newChar = c switch
                     {
                         <= '6' and >= '0' => Convert.ToChar(c + 3),
@@ -305,9 +306,9 @@
                 }
                 else
                 {
-                    for (int j = 0; j < signos.Length; j++) Console.Write(c == signos[j] && j < signos.Length - 1 ? signos[j+1] : c == signos[j] && j == signos.Length - 1 ? signos[0] : "");
+                    for (int j = 0; j < signos.Length; j++) Console.Write(c == signos[j] && j < signos.Length - 1 ? signos[j + 1] : c == signos[j] && j == signos.Length - 1 ? signos[0] : "");
                 }
-            } 
+            }
         }
 
 
