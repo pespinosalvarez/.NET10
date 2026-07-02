@@ -267,31 +267,30 @@ namespace EjerciciosBucles
             //*   *
             //*   *
             //*****
-
-            Console.WriteLine("Dime el ancho: ");
-            int ancho = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Dime el alto: ");
-            int alto = Convert.ToInt32(Console.ReadLine());
-
+            int ancho = 0, alto=0;
+            do
+            {
+                Console.WriteLine("Dime un ancho entero mayor que 2: ");
+                string anchoTexto = Console.ReadLine()!;
+                bool esNumero = int.TryParse(anchoTexto, out ancho);
+                if (ancho <= 2 || !esNumero)  
+                    Console.WriteLine("El ancho debe ser mayor que 2");
+            } while (ancho <= 2);
+            do
+            {
+                Console.WriteLine("Dime un alto entero mayor que 2: ");
+                string altoTexto = Console.ReadLine()!;
+                bool esNumero = int.TryParse(altoTexto, out alto);
+                if (alto <= 2 || !esNumero)
+                    Console.WriteLine("El alto debe ser mayor que 2");
+            } while (alto <= 2);
+            Console.WriteLine("Indica el carácter a pintar: ");
+            char c = Console.ReadKey(true).KeyChar;
             for (int fila = 1; fila <= alto; fila++)
             {
-                if (fila == 1 || fila == alto)
-                {
-                    for (int columna = 1; columna <= ancho; columna++)
-                    {
-                        Console.Write("*");
-                    }
-                }
-                else
-                {
-                    Console.Write("*");
-                    for (int columna = 2; columna < ancho; columna++)
-                    {
-                        Console.Write(" ");
-                    }
-                    Console.Write("*");
-                }
-                Console.WriteLine();
+                for(int columna=1; columna <= ancho; columna++) 
+                    Console.Write(fila == 1 || fila == alto || columna==1 || columna==ancho ? c  : " ");
+                Console.WriteLine();  
             }
         }
 
@@ -414,8 +413,8 @@ namespace EjerciciosBucles
             //Ejercicio12();
             //Ejercicio13();
             //Ejercicio14();
-            Ejercicio14b();
-            //Ejercicio15();
+            //Ejercicio14b();
+            Ejercicio15();
             //Ejercicio16();
             //Ejercicio17();
             //Ejercicio18();
