@@ -1,0 +1,14 @@
+C:\Users\paesa\source\repos\Ejercicios_Funciones\Ejercicios_Funciones\bin\Debug\net10.0\Ejercicios_Funciones.exe
+C:\Users\paesa\source\repos\Ejercicios_Funciones\Ejercicios_Funciones\bin\Debug\net10.0\Ejercicios_Funciones.deps.json
+C:\Users\paesa\source\repos\Ejercicios_Funciones\Ejercicios_Funciones\bin\Debug\net10.0\Ejercicios_Funciones.runtimeconfig.json
+C:\Users\paesa\source\repos\Ejercicios_Funciones\Ejercicios_Funciones\bin\Debug\net10.0\Ejercicios_Funciones.dll
+C:\Users\paesa\source\repos\Ejercicios_Funciones\Ejercicios_Funciones\bin\Debug\net10.0\Ejercicios_Funciones.pdb
+C:\Users\paesa\source\repos\Ejercicios_Funciones\Ejercicios_Funciones\obj\Debug\net10.0\Ejercicios_Funciones.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\paesa\source\repos\Ejercicios_Funciones\Ejercicios_Funciones\obj\Debug\net10.0\Ejercicios_Funciones.AssemblyInfoInputs.cache
+C:\Users\paesa\source\repos\Ejercicios_Funciones\Ejercicios_Funciones\obj\Debug\net10.0\Ejercicios_Funciones.AssemblyInfo.cs
+C:\Users\paesa\source\repos\Ejercicios_Funciones\Ejercicios_Funciones\obj\Debug\net10.0\Ejercicios_Funciones.csproj.CoreCompileInputs.cache
+C:\Users\paesa\source\repos\Ejercicios_Funciones\Ejercicios_Funciones\obj\Debug\net10.0\Ejercicios_Funciones.dll
+C:\Users\paesa\source\repos\Ejercicios_Funciones\Ejercicios_Funciones\obj\Debug\net10.0\refint\Ejercicios_Funciones.dll
+C:\Users\paesa\source\repos\Ejercicios_Funciones\Ejercicios_Funciones\obj\Debug\net10.0\Ejercicios_Funciones.pdb
+C:\Users\paesa\source\repos\Ejercicios_Funciones\Ejercicios_Funciones\obj\Debug\net10.0\Ejercicios_Funciones.genruntimeconfig.cache
+C:\Users\paesa\source\repos\Ejercicios_Funciones\Ejercicios_Funciones\obj\Debug\net10.0\ref\Ejercicios_Funciones.dll
