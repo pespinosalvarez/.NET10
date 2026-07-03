@@ -1,0 +1,14 @@
+C:\Users\paesa\source\repos\EjerciciosEnumeraciones\EjerciciosEnumeraciones\bin\Debug\net10.0\EjerciciosEnumeraciones.exe
+C:\Users\paesa\source\repos\EjerciciosEnumeraciones\EjerciciosEnumeraciones\bin\Debug\net10.0\EjerciciosEnumeraciones.deps.json
+C:\Users\paesa\source\repos\EjerciciosEnumeraciones\EjerciciosEnumeraciones\bin\Debug\net10.0\EjerciciosEnumeraciones.runtimeconfig.json
+C:\Users\paesa\source\repos\EjerciciosEnumeraciones\EjerciciosEnumeraciones\bin\Debug\net10.0\EjerciciosEnumeraciones.dll
+C:\Users\paesa\source\repos\EjerciciosEnumeraciones\EjerciciosEnumeraciones\bin\Debug\net10.0\EjerciciosEnumeraciones.pdb
+C:\Users\paesa\source\repos\EjerciciosEnumeraciones\EjerciciosEnumeraciones\obj\Debug\net10.0\EjerciciosEnumeraciones.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\paesa\source\repos\EjerciciosEnumeraciones\EjerciciosEnumeraciones\obj\Debug\net10.0\EjerciciosEnumeraciones.AssemblyInfoInputs.cache
+C:\Users\paesa\source\repos\EjerciciosEnumeraciones\EjerciciosEnumeraciones\obj\Debug\net10.0\EjerciciosEnumeraciones.AssemblyInfo.cs
+C:\Users\paesa\source\repos\EjerciciosEnumeraciones\EjerciciosEnumeraciones\obj\Debug\net10.0\EjerciciosEnumeraciones.csproj.CoreCompileInputs.cache
+C:\Users\paesa\source\repos\EjerciciosEnumeraciones\EjerciciosEnumeraciones\obj\Debug\net10.0\EjerciciosEnumeraciones.dll
+C:\Users\paesa\source\repos\EjerciciosEnumeraciones\EjerciciosEnumeraciones\obj\Debug\net10.0\refint\EjerciciosEnumeraciones.dll
+C:\Users\paesa\source\repos\EjerciciosEnumeraciones\EjerciciosEnumeraciones\obj\Debug\net10.0\EjerciciosEnumeraciones.pdb
+C:\Users\paesa\source\repos\EjerciciosEnumeraciones\EjerciciosEnumeraciones\obj\Debug\net10.0\EjerciciosEnumeraciones.genruntimeconfig.cache
+C:\Users\paesa\source\repos\EjerciciosEnumeraciones\EjerciciosEnumeraciones\obj\Debug\net10.0\ref\EjerciciosEnumeraciones.dll
