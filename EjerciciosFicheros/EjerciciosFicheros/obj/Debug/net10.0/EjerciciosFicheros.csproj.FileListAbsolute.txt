@@ -1,0 +1,14 @@
+C:\Users\Usuario\source\repos\EjerciciosFicheros\EjerciciosFicheros\bin\Debug\net10.0\EjerciciosFicheros.exe
+C:\Users\Usuario\source\repos\EjerciciosFicheros\EjerciciosFicheros\bin\Debug\net10.0\EjerciciosFicheros.deps.json
+C:\Users\Usuario\source\repos\EjerciciosFicheros\EjerciciosFicheros\bin\Debug\net10.0\EjerciciosFicheros.runtimeconfig.json
+C:\Users\Usuario\source\repos\EjerciciosFicheros\EjerciciosFicheros\bin\Debug\net10.0\EjerciciosFicheros.dll
+C:\Users\Usuario\source\repos\EjerciciosFicheros\EjerciciosFicheros\bin\Debug\net10.0\EjerciciosFicheros.pdb
+C:\Users\Usuario\source\repos\EjerciciosFicheros\EjerciciosFicheros\obj\Debug\net10.0\EjerciciosFicheros.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\source\repos\EjerciciosFicheros\EjerciciosFicheros\obj\Debug\net10.0\EjerciciosFicheros.AssemblyInfoInputs.cache
+C:\Users\Usuario\source\repos\EjerciciosFicheros\EjerciciosFicheros\obj\Debug\net10.0\EjerciciosFicheros.AssemblyInfo.cs
+C:\Users\Usuario\source\repos\EjerciciosFicheros\EjerciciosFicheros\obj\Debug\net10.0\EjerciciosFicheros.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\source\repos\EjerciciosFicheros\EjerciciosFicheros\obj\Debug\net10.0\EjerciciosFicheros.dll
+C:\Users\Usuario\source\repos\EjerciciosFicheros\EjerciciosFicheros\obj\Debug\net10.0\refint\EjerciciosFicheros.dll
+C:\Users\Usuario\source\repos\EjerciciosFicheros\EjerciciosFicheros\obj\Debug\net10.0\EjerciciosFicheros.pdb
+C:\Users\Usuario\source\repos\EjerciciosFicheros\EjerciciosFicheros\obj\Debug\net10.0\EjerciciosFicheros.genruntimeconfig.cache
+C:\Users\Usuario\source\repos\EjerciciosFicheros\EjerciciosFicheros\obj\Debug\net10.0\ref\EjerciciosFicheros.dll
