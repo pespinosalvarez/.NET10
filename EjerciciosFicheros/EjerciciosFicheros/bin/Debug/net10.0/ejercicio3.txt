@@ -1,0 +1,3 @@
+Pepito;7,45
+Pablo;5,34
+Adriana;7,34

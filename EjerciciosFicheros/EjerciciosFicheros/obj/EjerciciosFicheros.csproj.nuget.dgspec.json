@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Usuario\\source\\repos\\EjerciciosFicheros\\EjerciciosFicheros\\EjerciciosFicheros.csproj": {}
+    "C:\\Users\\paesa\\source\\repos\\EjerciciosFicheros\\EjerciciosFicheros\\EjerciciosFicheros.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Usuario\\source\\repos\\EjerciciosFicheros\\EjerciciosFicheros\\EjerciciosFicheros.csproj": {
+    "C:\\Users\\paesa\\source\\repos\\EjerciciosFicheros\\EjerciciosFicheros\\EjerciciosFicheros.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario\\source\\repos\\EjerciciosFicheros\\EjerciciosFicheros\\EjerciciosFicheros.csproj",
+        "projectUniqueName": "C:\\Users\\paesa\\source\\repos\\EjerciciosFicheros\\EjerciciosFicheros\\EjerciciosFicheros.csproj",
         "projectName": "EjerciciosFicheros",
-        "projectPath": "C:\\Users\\Usuario\\source\\repos\\EjerciciosFicheros\\EjerciciosFicheros\\EjerciciosFicheros.csproj",
-        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario\\source\\repos\\EjerciciosFicheros\\EjerciciosFicheros\\obj\\",
+        "projectPath": "C:\\Users\\paesa\\source\\repos\\EjerciciosFicheros\\EjerciciosFicheros\\EjerciciosFicheros.csproj",
+        "packagesPath": "C:\\Users\\paesa\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\paesa\\source\\repos\\EjerciciosFicheros\\EjerciciosFicheros\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\paesa\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

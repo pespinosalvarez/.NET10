@@ -1,6 +1,5 @@
-Manzana;1,45
-Pera;2,76
-Melón;4,345
-Uva;0,321
-Sandía;54,4356
-Melocotón;4,7567
+Aguacate;45,324
+Manzana;3,4567
+Pera;32,345
+Melón;17,234
+Plátano;45,345
