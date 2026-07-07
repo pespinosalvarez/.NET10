@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\paesa\\source\\repos\\ejerciciosPOO\\ejerciciosPOO\\ejerciciosPOO.csproj": {}
+    "C:\\Users\\Usuario\\source\\repos\\ejerciciosPOO\\ejerciciosPOO\\ejerciciosPOO.csproj": {}
   },
   "projects": {
-    "C:\\Users\\paesa\\source\\repos\\ejerciciosPOO\\ejerciciosPOO\\ejerciciosPOO.csproj": {
+    "C:\\Users\\Usuario\\source\\repos\\ejerciciosPOO\\ejerciciosPOO\\ejerciciosPOO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\paesa\\source\\repos\\ejerciciosPOO\\ejerciciosPOO\\ejerciciosPOO.csproj",
+        "projectUniqueName": "C:\\Users\\Usuario\\source\\repos\\ejerciciosPOO\\ejerciciosPOO\\ejerciciosPOO.csproj",
         "projectName": "ejerciciosPOO",
-        "projectPath": "C:\\Users\\paesa\\source\\repos\\ejerciciosPOO\\ejerciciosPOO\\ejerciciosPOO.csproj",
-        "packagesPath": "C:\\Users\\paesa\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\paesa\\source\\repos\\ejerciciosPOO\\ejerciciosPOO\\obj\\",
+        "projectPath": "C:\\Users\\Usuario\\source\\repos\\ejerciciosPOO\\ejerciciosPOO\\ejerciciosPOO.csproj",
+        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Usuario\\source\\repos\\ejerciciosPOO\\ejerciciosPOO\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\paesa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

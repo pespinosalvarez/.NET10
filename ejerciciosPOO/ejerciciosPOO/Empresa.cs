@@ -68,22 +68,23 @@ namespace ejerciciosPOO
         public void DespideEmpleado(string nombre)
         {
             int posicionEncontrada = -1;
-            for (int i = 0; i < _numEmpleados-1; i++)
+            for (int i = 0; i < _numEmpleados - 1; i++)
             {
                 if (_empleados[i] != null && _empleados[i].Equals(nombre, StringComparison.OrdinalIgnoreCase))
                 {
                     posicionEncontrada = i;
                     break;
                 }
-                if (posicionEncontrada != -1)
-                {
-                    DespideEmpleado(posicionEncontrada);
-                }
-                else
-                {
-                    Console.WriteLine($"No se encontró ningún empleado con el nombre: {nombre}");
-                }
             }
+            if (posicionEncontrada != -1)
+            {
+                DespideEmpleado(posicionEncontrada);
+            }
+            else
+            {
+                Console.WriteLine($"No se encontró ningún empleado con el nombre: {nombre}");
+            }
+
         }
 
 

@@ -65,11 +65,13 @@ namespace ejerciciosPOO
                 e1?.ContrataEmpleado(personas[i]);
             }
 
+           
+            
             e1?.MuestraEmpleados();
             e1?.DespideEmpleado(2);
-            e1?.DespideEmpleado("Pepito");
+            e1.DespideEmpleado("Pepito");
+            Console.WriteLine();
             e1?.MuestraEmpleados();
-
 
         }
     }
