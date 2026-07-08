@@ -19,24 +19,25 @@ namespace ejerciciosPOO
         public int Edad
         {
             get { return _edad; }
-            set { if (value > 0) _edad = value; }
+            set { if (value >= 0) _edad = value;
+            else Console.WriteLine("La edad no puede ser menor que 0."); }
         }
 
-        public Persona(string _nombre, int _edad)
+        public Persona(string nombre, int edad)
         {
-            Nombre = _nombre;
-            Edad = _edad;
+            _nombre = nombre;
+            _edad = edad;
         }
 
-        public void Saluda() 
+        public string Saluda() 
         {
-            Console.WriteLine($"{Nombre} tiene {Edad} años.");
+            return $"{_nombre} con {_edad} años.";
         }
 
         public Persona(Persona p)
         {
-            Nombre = p.Nombre;
-            Edad = p.Edad;
+            this._nombre = p._nombre;
+            this._edad = p._edad;
         } 
 
         public static Persona[] CopiaArray(Persona[] pOriginal)

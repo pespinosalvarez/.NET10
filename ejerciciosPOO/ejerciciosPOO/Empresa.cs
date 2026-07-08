@@ -9,7 +9,7 @@ namespace ejerciciosPOO
     internal class Empresa
     {
         private string _nombre;
-        private string[] _empleados;
+        private Persona[] _empleados;
         private int _numEmpleados;
 
         public string Nombre 
@@ -17,27 +17,23 @@ namespace ejerciciosPOO
             get { return _nombre; } 
             set { _nombre = value; } 
         }
-        public string[] Empleados
+        public Persona[] Empleados
         {
             get { return _empleados; }
         }
-        //        Crea un constructor que reciba el nombre de la empresa y lo asigne.Además, deberá
-        //inicializar el array de empleados con 100 posiciones, y la propiedad numEmpleados a cero.
-        //Crea una empresa y muestra “He creado la empresa (nombre de la empresa)”  después por
-        //la consola.
-
+     
         public Empresa(string nombre)
         {
-            Nombre = nombre;
-            _empleados = new string[100];
+            _nombre = nombre;
+            _empleados = new Persona[100];
             _numEmpleados = 0;
         }
 
-        public void ContrataEmpleado( Persona p)
+        public void ContrataEmpleado( Persona pContratada)
         {
             if(_numEmpleados < _empleados.Length)
             {
-                _empleados[_numEmpleados] = p.Nombre;
+                _empleados[_numEmpleados] = pContratada;
                 _numEmpleados++;
             }
         }
@@ -46,7 +42,7 @@ namespace ejerciciosPOO
         {
             for (int i = 0; i < _numEmpleados; i++)
             {
-                Console.WriteLine($"- Empleado {i + 1}: {_empleados[i]}");
+                Console.WriteLine($"{_empleados[i].Nombre} tiene {_empleados[i].Edad}");
             }
         }
 
@@ -70,7 +66,7 @@ namespace ejerciciosPOO
             int posicionEncontrada = -1;
             for (int i = 0; i < _numEmpleados - 1; i++)
             {
-                if (_empleados[i] != null && _empleados[i].Equals(nombre, StringComparison.OrdinalIgnoreCase))
+                if (_empleados[i] != null && _empleados[i].Nombre.Equals(nombre, StringComparison.OrdinalIgnoreCase))
                 {
                     posicionEncontrada = i;
                     break;
@@ -85,6 +81,78 @@ namespace ejerciciosPOO
                 Console.WriteLine($"No se encontró ningún empleado con el nombre: {nombre}");
             }
 
+        }
+
+        //public Persona EmpleadoMasJoven()
+        //{
+        //    if (_numEmpleados == 0) return null;
+        //    Persona masJoven = _empleados[0];
+        //    for(int i = 1; i < _numEmpleados; i++)
+        //    {
+        //        if (_empleados[i] != null && _empleados[i].Edad <= masJoven.Edad) 
+        //            masJoven = _empleados[i];
+        //    }
+        //    return masJoven;
+        //}
+
+        public Persona? EmpleadoMasJovenb()
+        {
+            if(_numEmpleados == 0 ) return null;
+            return _empleados.Where(e => e != null).OrderBy(e => e.Edad).FirstOrDefault(); 
+        }
+
+        //public Persona EmpleadoMasMayor()
+        //{
+        //    if (_numEmpleados == 0) return null;
+        //    Persona masMayor = _empleados[0];
+        //    for(int i = 1; i < _numEmpleados; i++)
+        //    {
+        //        if (_empleados[i] != null && _empleados[i].Edad >= masMayor.Edad) 
+        //            masMayor = _empleados[i];
+        //    }
+        //    return masMayor;
+        //}
+
+        public Persona? EmpleadoMasMayorb()
+        {
+            if (_numEmpleados == 0) return null;
+            return _empleados.Where(e => e != null).OrderByDescending(e => e.Edad).FirstOrDefault();
+        }
+
+        public double EdadPromedio()
+        {
+            return _empleados.Where(e=>e != null).Average(e=>e.Edad);
+        }
+
+        //public int EmpleadosPorEncimaDeMedia()
+        //{
+        //    int porEncima = 0;
+        //    for(int i = 0; i < _numEmpleados; i++)
+        //    {
+        //        if (_empleados[i] != null && _empleados[i].Edad > EdadPromedio()) porEncima++;
+        //    }
+        //    return porEncima;
+        //}
+        public int EmpleadosPorEncimaDeMediab()
+        {
+            if (_numEmpleados == 0) return 0;
+            return _empleados.Where(e => e != null && e.Edad > EdadPromedio()).Count();
+        }
+
+        //public int EmpleadosPorDebajoDeMedia()
+        //{
+        //    int porDebajo = 0;
+        //    for(int i = 0; i < _numEmpleados; i++)
+        //    {
+        //        if (_empleados[i] != null && _empleados[i].Edad < EdadPromedio()) porDebajo++;
+        //    }
+        //    return porDebajo;
+        //}
+
+        public int EmpleadosPorDebajoDeMediab()
+        {
+            if (_numEmpleados == 0) return 0;
+            return _empleados.Where(e => e != null && e.Edad < EdadPromedio()).Count();
         }
 
 

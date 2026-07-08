@@ -12,17 +12,3 @@ C:\Users\paesa\source\repos\ejerciciosPOO\ejerciciosPOO\obj\Debug\net10.0\refint
 C:\Users\paesa\source\repos\ejerciciosPOO\ejerciciosPOO\obj\Debug\net10.0\ejerciciosPOO.pdb
 C:\Users\paesa\source\repos\ejerciciosPOO\ejerciciosPOO\obj\Debug\net10.0\ejerciciosPOO.genruntimeconfig.cache
 C:\Users\paesa\source\repos\ejerciciosPOO\ejerciciosPOO\obj\Debug\net10.0\ref\ejerciciosPOO.dll
-C:\Users\Usuario\source\repos\ejerciciosPOO\ejerciciosPOO\bin\Debug\net10.0\ejerciciosPOO.exe
-C:\Users\Usuario\source\repos\ejerciciosPOO\ejerciciosPOO\bin\Debug\net10.0\ejerciciosPOO.deps.json
-C:\Users\Usuario\source\repos\ejerciciosPOO\ejerciciosPOO\bin\Debug\net10.0\ejerciciosPOO.runtimeconfig.json
-C:\Users\Usuario\source\repos\ejerciciosPOO\ejerciciosPOO\bin\Debug\net10.0\ejerciciosPOO.dll
-C:\Users\Usuario\source\repos\ejerciciosPOO\ejerciciosPOO\bin\Debug\net10.0\ejerciciosPOO.pdb
-C:\Users\Usuario\source\repos\ejerciciosPOO\ejerciciosPOO\obj\Debug\net10.0\ejerciciosPOO.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Usuario\source\repos\ejerciciosPOO\ejerciciosPOO\obj\Debug\net10.0\ejerciciosPOO.AssemblyInfoInputs.cache
-C:\Users\Usuario\source\repos\ejerciciosPOO\ejerciciosPOO\obj\Debug\net10.0\ejerciciosPOO.AssemblyInfo.cs
-C:\Users\Usuario\source\repos\ejerciciosPOO\ejerciciosPOO\obj\Debug\net10.0\ejerciciosPOO.csproj.CoreCompileInputs.cache
-C:\Users\Usuario\source\repos\ejerciciosPOO\ejerciciosPOO\obj\Debug\net10.0\ejerciciosPOO.dll
-C:\Users\Usuario\source\repos\ejerciciosPOO\ejerciciosPOO\obj\Debug\net10.0\refint\ejerciciosPOO.dll
-C:\Users\Usuario\source\repos\ejerciciosPOO\ejerciciosPOO\obj\Debug\net10.0\ejerciciosPOO.pdb
-C:\Users\Usuario\source\repos\ejerciciosPOO\ejerciciosPOO\obj\Debug\net10.0\ejerciciosPOO.genruntimeconfig.cache
-C:\Users\Usuario\source\repos\ejerciciosPOO\ejerciciosPOO\obj\Debug\net10.0\ref\ejerciciosPOO.dll

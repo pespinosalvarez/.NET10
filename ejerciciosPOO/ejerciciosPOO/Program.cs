@@ -62,17 +62,24 @@ namespace ejerciciosPOO
             Console.WriteLine($"He creado una empresa llamada {e1.Nombre}");
             for (int i = 0; i < 4; i++)
             {
-                e1?.ContrataEmpleado(personas[i]);
+                e1.ContrataEmpleado(personas[i]);
             }
 
-           
-            
-            e1?.MuestraEmpleados();
-            e1?.DespideEmpleado(2);
-            e1.DespideEmpleado("Pepito");
-            Console.WriteLine();
-            e1?.MuestraEmpleados();
+            e1.MuestraEmpleados();
+            //e1.DespideEmpleado(2);
+            //e1.DespideEmpleado("Pepito");
+            //Console.WriteLine();
+            //e1.MuestraEmpleados();
 
+
+            Console.WriteLine( );
+            Console.WriteLine($"La persona más joven es: {e1.EmpleadoMasJovenb()?.Saluda()}"); 
+            Console.WriteLine($"La persona más mayor es: {e1.EmpleadoMasMayorb()?.Saluda()}"); 
+            Console.WriteLine($"La edad promedio de la empresa es: {e1.EdadPromedio()}");
+            //Console.WriteLine($"Empleados por encima de la media: {e1.EmpleadosPorEncimaDeMedia()}");
+            Console.WriteLine($"Empleados por encima de la media: {e1.EmpleadosPorEncimaDeMediab()}");
+            //Console.WriteLine($"Empleados por debajo de la media: {e1.EmpleadosPorDebajoDeMedia()}");
+            Console.WriteLine($"Empleados por debajo de la media: {e1.EmpleadosPorDebajoDeMediab()}");
         }
     }
 }
